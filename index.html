@@ -17,7 +17,7 @@
     <title>WebStudio</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header hide">
       <div class="container header-container">
         <nav class="header-nav">
           <a href="./index.html" class="logo logo-web"
@@ -47,6 +47,11 @@
             </li>
           </ul>
         </address>
+        <button class="burger-menu-button">
+          <svg class="burger-menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -120,13 +125,17 @@
           </ul>
         </div>
       </section>
-      <section id="studio" class="team-section section hide">
+      <section id="studio" class="team-section section">
         <div class="container">
           <h2 class="team-section-href">Our Team</h2>
           <ul class="team-list">
             <li class="team-list-item">
               <img
-                src="./images/mark-guerero.jpg"
+                srcset="
+                  ./images/mark-guerero_desc_@1x.jpg 1x,
+                  ./images/mark-guerero_desc_@2x.jpg 2x
+                "
+                src="./images/mark-guerero_desc_@1x.jpg"
                 alt="Mark Guerrero foto"
                 width="264"
                 height="260"
@@ -192,7 +201,11 @@
             </li>
             <li class="team-list-item">
               <img
-                src="./images/tom-ford.jpg"
+                srcset="
+                  ./images/tom-ford_desc_@1x.jpg 1x,
+                  ./images/tom-ford_desc_@2x.jpg 2x
+                "
+                src="./images/tom-ford_desc_@1x.jpg"
                 alt="Tom Ford foto"
                 width="264"
                 height="260"
@@ -258,7 +271,11 @@
             </li>
             <li class="team-list-item">
               <img
-                src="./images/camila-garcia.jpg"
+                srcset="
+                  ./images/camila-garcia_desc_@1x.jpg 1x,
+                  ./images/camila-garcia_desc_@2x.jpg 2x
+                "
+                src="./images/camila-garcia_desc_@1x.jpg"
                 alt="Camila Garcia foto"
                 width="264"
                 height="260"
@@ -324,7 +341,11 @@
             </li>
             <li class="team-list-item">
               <img
-                src="./images/daniel-wilson.jpg"
+                srcset="
+                  ./images/daniel-wilson_desc_@1x.jpg 1x,
+                  ./images/daniel-wilson_desc_@2x.jpg 2x
+                "
+                src="./images/daniel-wilson_desc_@1x.jpg"
                 alt="Daniel Wilson foto"
                 height="260"
                 width="264"
@@ -391,7 +412,7 @@
           </ul>
         </div>
       </section>
-      <section id="section" class="section hide">
+      <section id="section" class="section">
         <div class="container">
           <h2 class="portfolio-href">Our Portfolio</h2>
           <ul class="portfolio-list">
@@ -678,7 +699,7 @@
             <label for="user-privacy" class="privacy-policy-checkbox-label">
               <span class="privacy-policy-question">
                 <svg class="check-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-check2"></use>
+                  <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
@@ -691,7 +712,7 @@
         </form>
       </div>
     </div>
-    <div class="menu-mobile is-open">
+    <div class="menu-mobile">
       <button type="button" class="close-menu-button" id="close-menu-button">
         <svg class="close-icon" width="8" height="8">
           <use href="./images/icons.svg#icon-close"></use>
