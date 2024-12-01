@@ -1388,6 +1388,10 @@ img {
   gap: 24px;
 }
 
+.mobile-address-list-item.active {
+  color: #4d5ae5;
+}
+
 .mobile-social-list-container {
   display: flex;
   gap: 40px;
